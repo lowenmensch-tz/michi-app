@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michis app</title>
+</head>
+<body>
+    <header>
+        <h1>Michi app</h1>
+    </header> 
+
+    <section id="random-michis">
+        <h2>Gatitos aleatorios</h2>
+
+        <button onclick="getRandomCat()" id="get-random-cat" type="button" class="random-cat-button"> Show me a cat!</button> 
+    </section>
+
+    <section id="favourites-michis">
+        <h2>Gatitos favoritos</h2>
+    </section>
+
+    <section id="upload-michis"> 
+        <h2>Cargar fotos de mi Michi</h2>
+        <form id="uploading-form" enctype="multipart/form-data">
+            <input id="file" type="file" id="file-to-upload">
+            <button type="button" id="upload-cat" onclick="uploadCatPhoto()">Upload Image</button>
+        </form>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+</html>
